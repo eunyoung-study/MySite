@@ -1,8 +1,16 @@
 @font-face {
-  font-family: "BagelFat";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/BagelFatOne-Regular.woff2")
-    format("woff2");
-  font-weight: normal;
+  font-family: "SandoolGukdaeTteokbokki";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff")
+    format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SandoolGukdaeTteokbokki";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDKukdetopokki.woff")
+    format("woff");
+  font-weight: 700;
   font-display: swap;
 }
 
@@ -28,7 +36,7 @@
 }
 
 body {
-  font-family: BagelFat;
+  font-family: SandoolGukdaeTteokbokki;
   margin: 0;
 }
 
@@ -87,4 +95,53 @@ ul {
 .header__menu__item.active {
   border: 1px solid var(--color-accent);
   border-radius: 5px;
+}
+
+/* home */
+#home {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  /* 3개 : 위 아래 좌우 / 4개 : 시계방향으로 */
+  padding: 7rem 1rem 5rem;
+  /* 사진도 인라인 태그기 때문에 text-align 적용됨 */
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border: 3px solid var(--color-accent);
+  /* 이미지가 아닌 다른 태그여도 비율대로 하게 해달라는 함수 */
+  object-fit: cover;
+}
+
+.home__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home__title--strong {
+  color: var(--color-accent);
+}
+
+.home__descriton {
+  font-size: 1.5rem;
+}
+
+.home__contact {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-black);
+  margin: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.home__contact:hover {
+  /* 자기를 투명하게 만들어서 부모의 컬러를 적용 */
+  background-color: transparent;
+  color: var(--color-text);
+  outline: 2px solid var(--color-accent);
 }
