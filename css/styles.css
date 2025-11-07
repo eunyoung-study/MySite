@@ -372,7 +372,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 250;
+  transition: all 250ms ease-in;
   transform: translateY(-10px);
 }
 
@@ -384,7 +384,7 @@ button {
 .project__title:after {
   content: "";
   display: block;
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translate(-50%);
   margin: 0.5rem 0;
