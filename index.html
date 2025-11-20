@@ -171,156 +171,158 @@
           <p class="description">Projects</p>
           <ul class="categories">
             <li>
-              <button class="category category--selected">
+              <button class="category" data-filter="all">
                 ALL<span class="category__count">10</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-filter="frontend">
                 Front-end<span class="category__count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-filter="mobile">
                 Mobile<span class="category__count">5</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-filter="backend">
                 Back-end<span class="category__count">2</span>
               </button>
             </li>
           </ul>
+          <div class="modal" id="projectModal">
+            <div class="modal-content">
+              <span class="modal-close">&times;</span>
+              <img
+                id="modalImg"
+                class="modal-img"
+                src="images\포트폴리오.png"
+                alt="project image"
+              />
+              <h2 id="modalTitle"></h2>
+              <p id="modalDesc"></p>
+            </div>
+          </div>
           <ul class="projects">
-            <li class="project">
-              <a href="#" target="_blank">
-                <img
-                  src="images\포트폴리오.png"
-                  alt="포트폴리오"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #1</h3>
-                  <p>클론코딩 사이트</p>
-                </div>
-              </a>
+            <li class="project" data-category="frontend">
+              <img
+                src="images\포트폴리오.png"
+                alt="포트폴리오"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #1</h3>
+                <p>클론코딩 사이트</p>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
-                <img
-                  src="images\포트폴리오.png"
-                  alt="포트폴리오"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #2</h3>
-                  <p>클론코딩 사이트</p>
-                </div>
-              </a>
+
+            <li class="project" data-category="frontend">
+              <img
+                src="images\포트폴리오.png"
+                alt="포트폴리오"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #2</h3>
+                <p>클론코딩 사이트</p>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
-                <img
-                  src="images\포트폴리오.png"
-                  alt="포트폴리오"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #3</h3>
-                  <p>클론코딩 사이트</p>
-                </div>
-              </a>
+
+            <li class="project" data-category="frontend">
+              <img
+                src="images\포트폴리오.png"
+                alt="포트폴리오"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #3</h3>
+                <p>클론코딩 사이트</p>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
-                <img
-                  src="images\포트폴리오.png"
-                  alt="포트폴리오"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #4</h3>
-                  <p>클론코딩 사이트</p>
-                </div>
-              </a>
+
+            <li class="project" data-category="mobile">
+              <img
+                src="images\포트폴리오.png"
+                alt="포트폴리오"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #4</h3>
+                <p>클론코딩 사이트</p>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
-                <img
-                  src="images\포트폴리오.png"
-                  alt="포트폴리오"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #5</h3>
-                  <p>클론코딩 사이트</p>
-                </div>
-              </a>
+
+            <li class="project" data-category="mobile">
+              <img
+                src="images\포트폴리오.png"
+                alt="포트폴리오"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #5</h3>
+                <p>클론코딩 사이트</p>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
-                <img
-                  src="images\포트폴리오.png"
-                  alt="포트폴리오"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #6</h3>
-                  <p>클론코딩 사이트</p>
-                </div>
-              </a>
+
+            <li class="project" data-category="mobile">
+              <img
+                src="images\포트폴리오.png"
+                alt="포트폴리오"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #6</h3>
+                <p>클론코딩 사이트</p>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
-                <img
-                  src="images\포트폴리오.png"
-                  alt="포트폴리오"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #7</h3>
-                  <p>클론코딩 사이트</p>
-                </div>
-              </a>
+
+            <li class="project" data-category="mobile">
+              <img
+                src="images\포트폴리오.png"
+                alt="포트폴리오"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #7</h3>
+                <p>클론코딩 사이트</p>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
-                <img
-                  src="images\포트폴리오.png"
-                  alt="포트폴리오"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #8</h3>
-                  <p>클론코딩 사이트</p>
-                </div>
-              </a>
+
+            <li class="project" data-category="mobile">
+              <img
+                src="images\포트폴리오.png"
+                alt="포트폴리오"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #8</h3>
+                <p>클론코딩 사이트</p>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
-                <img
-                  src="images\포트폴리오.png"
-                  alt="포트폴리오"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #9</h3>
-                  <p>클론코딩 사이트</p>
-                </div>
-              </a>
+
+            <li class="project" data-category="backend">
+              <img
+                src="images\포트폴리오.png"
+                alt="포트폴리리오"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #9</h3>
+                <p>클론코딩 사이트</p>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
-                <img
-                  src="images\포트폴리오.png"
-                  alt="포트폴리오"
-                  class="project__img"
-                />
-                <div class="project__metadata">
-                  <h3 class="project__title">Project #10</h3>
-                  <p>클론코딩 사이트</p>
-                </div>
-              </a>
+
+            <li class="project" data-category="backend">
+              <img
+                src="images\포트폴리오.png"
+                alt="포트폴리오"
+                class="project__img"
+              />
+              <div class="project__metadata">
+                <h3 class="project__title">Project #10</h3>
+                <p>클론코딩 사이트</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -366,12 +368,6 @@
           </li>
         </ul>
       </section>
-      <!-- aside -->
-      <aside>
-        <a class="arrow-up" href="#home" title="위로"
-          ><i class="fa-solid fa-arrow-up"></i
-        ></a>
-      </aside>
     </main>
     <!-- contact -->
     <footer id="contact" class="section">
@@ -400,5 +396,12 @@
         <p>&copy; Eunyoung - All rights reserved</p>
       </div>
     </footer>
+    <!-- aside -->
+    <aside>
+      <a class="arrow-up" href="#home" title="위로"
+        ><i class="fa-solid fa-arrow-up"></i
+      ></a>
+    </aside>
+    <script src="./js/main.js"></script>
   </body>
 </html>
